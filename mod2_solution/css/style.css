@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif; /* Opcional: establecer una familia de fuentes */
+    font-family: Arial, sans-serif;
 }
 
 header {
@@ -16,32 +16,57 @@ header {
     margin: 10px;
     padding: 20px;
     float: left;
-    width: calc(33.33% - 20px); /* Considerando el margen */
     background-color: #f0f0f0;
     position: relative;
+    width: calc(33.33% - 20px); /* Tamaño por defecto de las cajas */
 }
 
-h2 {
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.box h2 {
     position: absolute;
     top: 0;
     right: 0;
     margin: 0;
-    background-color: #333; /* Color de fondo de la región del título */
+    background-color: #333;
     color: white;
     padding: 5px;
     border-bottom-left-radius: 5px;
 }
 
-/* Media Query para tableta */
+.box:nth-child(1) h2 { /* Carne */
+    background-color: #ff2f00;
+}
+
+.box:nth-child(2) h2 { /* Pollo */
+    background-color: #0dff39;
+}
+
+.box:nth-child(3) h2 { /* Sushi */
+    background-color: #2f00ff;
+}
+
 @media (max-width: 991px) and (min-width: 768px) {
     .box {
-        width: calc(50% - 20px);
+        width: calc(45% - 20px); 
+        margin: 20px;
+        margin-left: 25px;
+    }
+
+    .box:nth-child(3) {
+        width: calc(93% - 20px); 
+        clear: both; 
     }
 }
 
-/* Media Query para móvil */
 @media (max-width: 767px) {
     .box {
-        width: 100%;
+        width: calc(100% - 20px); 
+        margin: 0 10px 20px 10px;      
+        margin-top: 20px;
     }
 }
