@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Opcional: establecer una familia de fuentes */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.box {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+    float: left;
+    width: calc(33.33% - 20px); /* Considerando el margen */
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+h2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    background-color: #333; /* Color de fondo de la región del título */
+    color: white;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* Media Query para tableta */
+@media (max-width: 991px) and (min-width: 768px) {
+    .box {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Media Query para móvil */
+@media (max-width: 767px) {
+    .box {
+        width: 100%;
+    }
+}
