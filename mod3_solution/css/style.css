@@ -1,0 +1,34 @@
+/* Barra de Navegación */
+.navbar-fixed-top {
+    background-color: #333; /* Cambia al color deseado */
+}
+
+/* Título de la página */
+.page-title {
+    margin-top: 70px; /* Ajusta el margen según sea necesario */
+}
+
+/* Contenido de la página */
+.high-section {
+    background-color: #f5f5f5; /* Cambia al color deseado */
+    padding: 20px;
+    min-height: 1000px; /* Ajusta la altura según sea necesario */
+}
+
+/* Menú desplegable móvil */
+.navbar-toggle {
+    border: none;
+    background-color: #333; /* Cambia al color deseado */
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff; /* Cambia al color deseado */
+}
+
+.navbar-collapse {
+    background-color: #333; /* Cambia al color deseado */
+}
+
+.navbar-nav > li > a {
+    color: #fff; /* Cambia al color deseado */
+}
