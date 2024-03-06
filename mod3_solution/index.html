@@ -3,43 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Food, LLC - Nuestro Menú</title>
 </head>
 <body>
 
     <!-- Barra de Navegación -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Food, LLC</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <a class="navbar-brand">Food, LLC</a>
+            <!-- Botón del menú móvil -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
+            <!-- Contenido del menú móvil -->
             <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <!-- Para móvil -->
-                    <li class="nav-item"><a class="nav-link" href="#">Pollo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Carne</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sushi</a></li>
+                <ul class="dropdown-menu visible-xs">
+                    <li class="nav-item"><a href="#pollo">Pollo</a></li>
+                    <li class="nav-item"><a href="#">Carne</a></li>
+                    <li class="nav-item"><a href="#">Sushi</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <!-- Título de la página -->
-    <div class="container text-center">
+    <div class="container text-center mt-4">
         <h1 class="page-title">Nuestro Menú</h1>
     </div>
 
     <!-- Contenido de la página -->
-    <section class="high-section">
-        <div class="container">
-            <!-- Utiliza la cuadrícula de Bootstrap aquí para tu contenido -->
-        </div>
-    </section>
+    <div id="pollo" class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- Contenido de la sección -->
+                <div class="section">
+                    <!-- Título de la sección -->
+                    <h2 style="text-align: center;">Pollo</h2>
+                    <h2> Deliciosos Platos de Pollo </h2>
+                        <section>
+                        <h3>Pollo a la Parrilla</h3>
+                        <p>Descubre nuestro exquisito Pollo a la Parrilla, preparado con especias frescas y asado a la perfección. Cada bocado es una explosión de sabores que te hará volver por más.</p>
+                    </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                    <section>
+                        <h3>Pollo al Horno con Hierbas</h3>
+                        <p>Nuestro Pollo al Horno con Hierbas es una deliciosa opción para los amantes de las hierbas aromáticas. Disfruta de la jugosidad del pollo complementada con la frescura de las hierbas seleccionadas.</p>
+                    </section>
+
+                    <section>
+                        <h3>Ensalada de Pollo con Aguacate</h3>
+                        <p>Para aquellos que buscan opciones más ligeras, nuestra Ensalada de Pollo con Aguacate es la elección perfecta. Ingredientes frescos y pollo a la parrilla se combinan para crear una ensalada saludable y deliciosa.</p>
+                    </section>
+
+                    <section>
+                        <h3>Pollo Teriyaki con Verduras Salteadas</h3>
+                        <p>Sumérgete en la deliciosa fusión de sabores con nuestro Pollo Teriyaki con Verduras Salteadas. El pollo jugoso se cocina a la perfección en nuestra irresistible salsa teriyaki, y se sirve con coloridas y frescas verduras salteadas. Una experiencia asiática que deleitará tu paladar.</p>
+                    </section>
+
+                    <section>
+                        <h3>Alitas de Pollo BBQ</h3>
+                        <p>Disfruta de la explosión de sabor en cada mordisco con nuestras famosas Alitas de Pollo BBQ. Bañadas en nuestra salsa barbacoa casera, estas crujientes alitas son el aperitivo perfecto para compartir o para disfrutar en solitario. ¡Una opción deliciosa que satisfará tus antojos de pollo y te dejará queriendo más!</p>
+                    </section>
+
+                    <section>
+                        <h3>Pollo Cordon Bleu</h3>
+                        <p>Prueba la elegancia en cada bocado con nuestro exquisito Pollo Cordon Bleu. Filetes de pollo tiernos rellenos de jamón y queso suizo, empanizados y horneados a la perfección. Cada porción es una combinación de sabores que te transportará a la alta cocina. ¡Una experiencia gastronómica única para los amantes del pollo!</p>
+                    </section>
+
+                    <p>¡Explora nuestro menú completo para descubrir más opciones irresistibles de pollo que tenemos para ti!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

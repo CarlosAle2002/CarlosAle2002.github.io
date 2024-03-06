@@ -1,6 +1,18 @@
-/* Barra de Navegación */
-.navbar-fixed-top {
-    background-color: #333; /* Cambia al color deseado */
+
+.dropdown-menu {
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    background-color: #c9c6c6; /* Color de fondo */
+}
+
+.dropdown-menu li {
+    text-align: center; /* Centra el texto */
+    background-color: #7aabca; /* Color de fondo */
+
+}
+
+.dropdown-menu li a {
+    background-color: #bbb7b7; /* Color de fondo */
+    color: #1f1e1e;   /*Color del texto */
 }
 
 /* Título de la página */
@@ -8,27 +20,50 @@
     margin-top: 70px; /* Ajusta el margen según sea necesario */
 }
 
+.navbar {
+    background-color: #979797;
+    color:#000000;
+}
+
+.contenedor {
+    margin-top: 30px; /* Espacio superior */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
 /* Contenido de la página */
 .high-section {
-    background-color: #f5f5f5; /* Cambia al color deseado */
+    overflow-y: auto; 
+    background-color: #4ed697; /* Cambia al color deseado */
     padding: 20px;
-    min-height: 1000px; /* Ajusta la altura según sea necesario */
+}
+
+.section {
+    height: 1000px; /* Altura */
+    overflow-y: auto; /* Agrega desplazamiento vertical cuando el contenido exceda la altura máxima */
+    background-color: #6e9db9; /* Color de fondo */
+    padding: 20px 40px;
 }
 
 /* Menú desplegable móvil */
 .navbar-toggle {
     border: none;
-    background-color: #333; /* Cambia al color deseado */
+    background-color: #acacac; /* Cambia al color deseado */
 }
 
 .navbar-toggle .icon-bar {
-    background-color: #fff; /* Cambia al color deseado */
+    background-color: #000000; /* Cambia al color deseado */
 }
 
 .navbar-collapse {
-    background-color: #333; /* Cambia al color deseado */
+    background-color: #979797 /* Cambia al color deseado */
 }
 
 .navbar-nav > li > a {
-    color: #fff; /* Cambia al color deseado */
+    color: #9e9e9e; /* Cambia al color deseado */
 }
+
+.navbar-brand{
+    color:#000000;
+}
+
+
